@@ -19,8 +19,6 @@
 # To pass an env var HOST_IP to container, do:
 #
 #   docker run -ti -e HOST_IP=$(ip route | grep -v docker | awk '{if(NF==11) print $9}') --entrypoint /bin/bash local/pl-MatMultiply
-#
-
 
 FROM nvidia/cuda:latest
 LABEL maintainer "NVIDIA CORPORATION <cudatools@nvidia.com>"
