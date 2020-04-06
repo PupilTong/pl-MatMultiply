@@ -95,7 +95,7 @@ To run using ``docker``, be sure to assign an "input" directory to ``/incoming``
                 -e NVIDIA_VISIBLE_DEVICES=1                             \
                 -v $(pwd)/in:/incoming -v $(pwd)/out:/outgoing          \
                 fnndsc/pl-matrixmultiply                                \
-                python3 matmultiply.py                                  \
+                matmultiply.py                                          \
                 -c 32,32,128                                            \
                 /incoming /outgoing                 
 
@@ -107,7 +107,7 @@ Examples
                 -e NVIDIA_VISIBLE_DEVICES=1                             \
                 -v $(pwd)/in:/incoming -v $(pwd)/out:/outgoing          \
                 fnndsc/pl-matrixmultiply                                \
-                python3 matmultiply.py                                  \
+                matmultiply.py                                          \
                 -c 32,32,128                                            \
                 /incoming /outgoing                 
 
